@@ -23,7 +23,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/staff")
 public class StaffController {
-    private static final String address = "http://localhost:8889";
+    private static final String address = "http://staff:8889";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);

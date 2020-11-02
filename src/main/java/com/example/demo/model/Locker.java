@@ -1,15 +1,10 @@
 package com.example.demo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
 import java.util.UUID;
 
-@Entity
+
 public final class Locker {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private int number;
     private boolean free = true;

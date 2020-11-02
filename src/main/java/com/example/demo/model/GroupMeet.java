@@ -1,17 +1,14 @@
 package com.example.demo.model;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-@Entity
+
 public final class GroupMeet {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
     private UUID id;
-    @ElementCollection
     private List<UUID> clients;
     private UUID trainer;
     private Date date;

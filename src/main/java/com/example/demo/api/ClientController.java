@@ -19,7 +19,7 @@ import java.util.UUID;
 @RequestMapping("/client")
 public class ClientController {
 
-    private static final String address = "http://localhost:8887";
+    private static final String address = "http://clients:8887";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);

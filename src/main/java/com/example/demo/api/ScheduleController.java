@@ -22,7 +22,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/shedule")
 public class ScheduleController {
-    private static final String address = "http://localhost:8888";
+    private static final String address = "http://schedule:8888";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);
